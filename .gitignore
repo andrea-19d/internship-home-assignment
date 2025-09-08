@@ -17,3 +17,10 @@
 [Oo]bj/
 **/[Bb]in/**
 **/[Oo]bj/**
+
+
+# JetBrains / IntelliJ / Rider
+.idea/
+*.iml
+*.ipr
+*.iws
