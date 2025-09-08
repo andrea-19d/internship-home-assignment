@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\src\\Rider\\Solution\\internship-home-assignment\\internship-home-assignment\\internship-home-assignment.csproj",
+      "projectUniqueName": "A:\\Git\\internship-home-assignment\\internship-home-assignment.csproj",
       "projectName": "internship-home-assignment",
-      "projectPath": "A:\\src\\Rider\\Solution\\internship-home-assignment\\internship-home-assignment\\internship-home-assignment.csproj",
+      "projectPath": "A:\\Git\\internship-home-assignment\\internship-home-assignment.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "A:\\src\\Rider\\Solution\\internship-home-assignment\\internship-home-assignment\\obj\\",
+      "outputPath": "A:\\Git\\internship-home-assignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config"
