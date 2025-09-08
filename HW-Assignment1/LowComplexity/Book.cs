@@ -1,4 +1,6 @@
-﻿namespace internship_home_assignment.HW_Assignment2.LowComplexity;
+﻿using System;
+
+namespace internship_home_assignment.HW_Assignment2.LowComplexity;
 
 public class Book
 {

@@ -9,7 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="HW-Assignment1\" />
       <Folder Include="HW-Assignment2\" />
     </ItemGroup>
 
