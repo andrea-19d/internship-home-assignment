@@ -1,4 +1,6 @@
-﻿namespace internship_home_assignment.HW_Assignment1.MediumComplexity;
+﻿using System;
+
+namespace internship_home_assignment.HW_Assignment1.MediumComplexity;
 
 public static class SelectCategory
 {
