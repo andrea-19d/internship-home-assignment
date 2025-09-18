@@ -2,8 +2,8 @@
 
 A small .NET console solution with two independent assignments:
 
-- **Book App** — create one `Book` via a static factory and print its details via an instance method.  
-- **Product App** — create one `Product` with validated input (price/date), choose a `Category`, then print details in a specific date format.
+- **Low Complexity** — create one `Book` via a static factory and print its details via an instance method.  
+- **Medium Complexity** — create one `Product` with validated input (price/date), choose a `Category`, then print details in a specific date format.
 
 ---
 
@@ -19,35 +19,17 @@ A small .NET console solution with two independent assignments:
 
 ```
 / (repo root)
-├─ src/
-│  ├─ BookApp/
-│  │  ├─ Program.cs
-│  │  └─ Models/Book.cs
-│  └─ ProductApp/
-│     ├─ Program.cs
-│     └─ Models/
-│        ├─ Product.cs
-│        ├─ Category.cs
-│        └─ SelectCategory.cs
+├─ HW-Assignment1/
+│  ├─ LowComplexity/
+│  │  └─ Book.cs
+│  └─ MediumComplexity/
+│     ├─ Category.cs
+│     ├─ Product.cs
+│     └─ SelectCategory.cs
+├─ Program.cs
 ├─ .gitignore
 └─ README.md
 ```
-
->You can also keep both in a single project and call them from a menu, but **two projects** keeps each assignment clean.
-
----
-
-## Build & Run
-
-```bash
-# Book assignment
-dotnet run --project src/BookApp
-
-# Product assignment
-dotnet run --project src/ProductApp
-```
-
----
 
 ## 1) Book App
 
