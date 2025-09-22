@@ -1,6 +1,6 @@
 ﻿using System;
 using internship_home_assignment.HW_Assignment1.MediumComplexity;
-using internship_home_assignment.HW_Assignment2.LowComplexity;  
+using internship_home_assignment.HW_Assignment2.LowComplexity;
 
 namespace internship_home_assignment
 {
@@ -18,44 +18,37 @@ namespace internship_home_assignment
                 Console.Write("Select option: ");
 
                 var choice = (Console.ReadLine() ?? "").Trim();
-
-                switch (choice)
+                
+                try
                 {
-                    case "1":
-                        try
-                        {
+                    switch (choice)
+                    {
+                        case "1":
                             var book = Book.CreateBook();
                             Console.WriteLine();
                             book.DisplayInfo();
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine($"\nError creating product: {ex.Message}");
-                        }
-                        Pause();
-                        break;
+                            Pause();
+                            break;
 
-                    case "2":
-                        try
-                        {
+                        case "2":
                             var product = Product.CreateProduct();
                             Console.WriteLine();
                             product.DisplayProductInfo();
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine($"\nError creating book: {ex.Message}");
-                        }
-                        Pause();
-                        break;
+                            Pause();
+                            break;
 
-                    case "0":
-                        return;
+                        case "0":
+                            return;
 
-                    default:
-                        Console.WriteLine("\nInvalid selection. Please choose 1, 2, or 0.");
-                        Pause();
-                        break;
+                        default:
+                            Console.WriteLine("\nInvalid selection. Please choose 1, 2, or 0.");
+                            Pause();
+                            break;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"\nUnexpected error:\n {ex.Message}");
                 }
             }
         }

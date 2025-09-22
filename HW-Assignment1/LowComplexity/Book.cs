@@ -18,11 +18,13 @@ public class Book
     public static Book CreateBook()
     {
         Console.Write($"Enter the book title: ");
-        string title = Console.ReadLine();
+        string title = (Console.ReadLine()  ?? "").Trim();
         Console.Write($"Enter the book author: ");
-        string author = Console.ReadLine();
+        string author = (Console.ReadLine()  ?? "").Trim();
         Console.Write($"Enter the book pages: ");
-        int pages = int.Parse(Console.ReadLine());
+        int pages;
+        while (!int.TryParse(Console.ReadLine(), out pages) ||  pages < 0 )
+            Console.WriteLine("Invalid input. Try again.");
         
         Book book = new Book(title, author, pages);
         return book;
