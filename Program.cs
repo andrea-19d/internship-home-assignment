@@ -27,6 +27,7 @@ namespace internship_home_assignment
                             var book = Book.CreateBook();
                             Console.WriteLine();
                             book.DisplayInfo();
+                            Print1ForFUn();
                             Pause();
                             break;
 
@@ -51,6 +52,11 @@ namespace internship_home_assignment
                     Console.WriteLine($"\nUnexpected error:\n {ex.Message}");
                 }
             }
+        }
+
+        public static void Print1ForFUn()
+        {
+            Console.WriteLine("print 1");
         }
 
         private static void Pause()
